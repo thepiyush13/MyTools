@@ -1,0 +1,22 @@
+﻿VERSION BUILD=8961227 RECORDER=FX
+'TAB T=1
+'URL GOTO=https://hire.jobvite.com/CompanyJobs/Careers.aspx?c=qrY9Vfwd&cs=9qd9Vfwr&nl=1&jvi=oBew2fw7,Apply&jvs=LinkedIn_Wrapping&jvk=Apply
+TAG POS=1 TYPE=IMG ATTR=SRC:https://app.jobvite.com//images2/applyWithResume.png
+FRAME NAME="list"
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:Form1 ATTR=ID:File CONTENT=/home/piyush/Documents/AppMaterial/Piyush<SP>Tripathi<SP>Resume<SP>Java.pdf
+FRAME F=0
+TAG POS=1 TYPE=INPUT:BUTTON FORM=NAME:NoFormName ATTR=*
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:jvform ATTR=ID:jvfld-x-* CONTENT=Austin
+TAG POS=R1 TYPE=INPUT:TEXT FORM=ID:jvform ATTR=ID:jvfld-x-* CONTENT=Texas
+TAG POS=R1 TYPE=INPUT:TEXT FORM=ID:jvform ATTR=ID:jvfld-x-* CONTENT=USA
+TAG POS=R1 TYPE=INPUT:TEXT FORM=ID:jvform ATTR=ID:jvfld-x-* CONTENT=77801
+TAG POS=R1 TYPE=INPUT:TEXT FORM=ID:jvform ATTR=ID:jvfld-x-* CONTENT=9797395282
+TAG POS=1 TYPE=SELECT FORM=ID:jvform ATTR=ID:jvfld-* CONTENT=%Masters/Graduate<SP>Degree
+TAG POS=R1 TYPE=SELECT FORM=ID:jvform ATTR=ID:jvfld-* CONTENT=%English
+TAG POS=1 TYPE=A ATTR=ID:ImportCL
+FRAME NAME="list"
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:Form1 ATTR=ID:File CONTENT=/home/piyush/Documents/AppMaterial/Piyush<SP>Tripathi<SP>Cover<SP>Letter<SP>G.pdf
+FRAME F=0
+TAG POS=2 TYPE=INPUT:BUTTON FORM=NAME:NoFormName ATTR=*
+TAG POS=1 TYPE=SELECT FORM=ID:jvform ATTR=ID:jvfld-x-* CONTENT=%1
+TAG POS=R1 TYPE=SELECT FORM=ID:jvform ATTR=ID:jvfld-x-* CONTENT=%2

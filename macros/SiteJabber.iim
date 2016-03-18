@@ -1,0 +1,14 @@
+SET !ERRORIGNORE YES
+SET !EXTRACT_TEST_POPUP YES
+SET !VAR1 1666
+ADD !VAR1 -{{!LOOP}}
+TAG XPATH="//*[@id="ReviewRow-{{!VAR1}}"]/div[1]/div[2]/div[1]/a"
+SET !EXTRACT NULL
+TAG POS=1 TYPE=H1 ATTR=ID:profile_name EXTRACT=TXT  
+SET !VAR1 EVAL("'{{!EXTRACT}}'.replace(/[\\t|\\n]/g, '').replace('Profile','').replace('\\'s','');")
+TAG POS=2 TYPE=A ATTR=ID:*link*
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:MessageSendDialogForm ATTR=ID:MessageSubject CONTENT=Hi<SP>{{!VAR1}},<SP>Can<SP>I<SP>ask<SP>a<SP>few<SP>questions<SP>about<SP>your<SP>experience?
+SET !VAR2 "Hi {{!VAR1}},\nI came across your review on the Livecareer online resume builder service. I do not belong to this company but I am  trying to find more about reliable resume services and your insights will be really helpful. I understand that you must be really busy but can I ask a few questions regarding this ?\nThanks for your time,\n-resumeJohn"
+TAG POS=1 TYPE=TEXTAREA FORM=ID:MessageSendDialogForm ATTR=ID:MessageBody CONTENT={{!VAR2}}
+PAUSE
+BACK

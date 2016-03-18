@@ -1,0 +1,15 @@
+SET !ERRORIGNORE YES
+SET !EXTRACT_TEST_POPUP YES
+SET !VAR1 {{!LOOP}}
+ADD !VAR1 1
+TAG XPATH="//*[@id="super-container"]/div/div/div[1]/div[3]/div[1]/div[2]/ul/li[{{!VAR1}}]/div/div[1]/div/div/div[2]/ul[1]/li[1]/a"
+SET !EXTRACT NULL
+TAG POS=1 TYPE=DIV ATTR=CLASS:titled-nav-title-section EXTRACT=TXT  
+SET !VAR1 EVAL("'{{!EXTRACT}}'.replace(/[\\t|\\n]/g, '').replace('Profile','').replace('\\'s','').trim();")
+TAG POS=1 TYPE=A ATTR=CLASS:*send-pm*
+PAUSE
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:compForm ATTR=ID:pop_message_subject CONTENT=Hi<SP>{{!VAR1}},<SP>Can<SP>I<SP>ask<SP>a<SP>few<SP>questions<SP>about<SP>your<SP>experience?
+SET !VAR2 "Hi {{!VAR1}},\nI came across your review on the Livecareer online resume builder service. I do not belong to this company but I am  trying to find more about reliable resume services and your insights will be really helpful. I understand that you must be really busy but can I ask a few questions regarding this ?\nThanks for your time,\n-Jhonny"
+TAG POS=1 TYPE=TEXTAREA FORM=ID:compForm ATTR=ID:pop_message CONTENT={{!VAR2}}
+PAUSE
+BACK

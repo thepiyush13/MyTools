@@ -1,0 +1,63 @@
+﻿VERSION BUILD=8961227 RECORDER=FX
+SET !TIMEOUT_STEP 3
+SET !ERRORIGNORE YES
+'TAB T=1
+'URL GOTO=https://philips.taleo.net/careersection/2/jobdetail.ftl?job=196081
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:ftlform ATTR=ID:requisitionDescriptionInterface.UP_APPLY_ON_REQ.row1
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:dialogTemplate-dialogForm ATTR=ID:dialogTemplate-dialogForm-login-register
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:dialogTemplate-dialogForm ATTR=ID:dialogTemplate-dialogForm-StatementBeforeAuthentificationContent-ContinueButton
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:dialogTemplate-dialogForm ATTR=ID:dialogTemplate-dialogForm-userName CONTENT=thepiyush13@gmail.com
+SET !ENCRYPTION NO
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ID:dialogTemplate-dialogForm ATTR=ID:dialogTemplate-dialogForm-password CONTENT=U2cbtpths
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ID:dialogTemplate-dialogForm ATTR=ID:dialogTemplate-dialogForm-passwordConfirm CONTENT=U2cbtpths
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:dialogTemplate-dialogForm ATTR=ID:dialogTemplate-dialogForm-defaultCmd
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:et-ef ATTR=ID:et-ef-content-flowTemplate-LegalDisclaimerPage-legalDisclaimerContinueButton
+TAG POS=1 TYPE=INPUT:RADIO FORM=ID:editTemplateMultipart-editForm ATTR=ID:editTemplateMultipart-editForm-content-*resumeUploadRadio_2
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:editTemplateMultipart-editForm ATTR=ID:editTemplateMultipart-editForm-content*ResumeUploadInputFile CONTENT=/home/piyush/Documents/AppMaterial/Piyush<SP>Tripathi<SP>Resume<SP>Java.pdf
+PAUSE
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:editTemplateMultipart-editForm ATTR=ID:editTemplateMultipart-editForm-content*saveContinueCmdBottom
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_LastName CONTENT=Tripathi
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_FirstName CONTENT=Piyush
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_Address CONTENT=4302<SP>college<SP>main<SP>apartments
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_Address2 CONTENT=college<SP>main
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_ZipCode CONTENT=77801
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_City CONTENT=College<SP>Station
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_ResidenceLocation-1 CONTENT=%com.taleo.systemcomponent.olf.entity.NetworkLocation__3120
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_ResidenceLocation-2 CONTENT=%com.taleo.systemcomponent.olf.entity.NetworkLocation__51222
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_PreferredPhone CONTENT=%3
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_HomePhone CONTENT=9797395282
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_WorkPhone CONTENT=9797395282
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_MobilePhone CONTENT=9797395282
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_EmailAddress CONTENT=thepiyush13@gmail.com
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_UDFCandidatePersonalInfo_Preferred_contact_method CONTENT=%com.taleo.functionalcomponent.talent.entity.common.selection.UDSElement__10120__2
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_UDFCandidatePersonalInfo_Best*time*contact CONTENT=10:00
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:*candidate_personal_info_UDFCandidatePersonalInfo_Newsletter CONTENT=%com.taleo.functionalcomponent.talent.entity.common.selection.UDSElement__10140__2
+'TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:*page_1:sendMeJobs:selectBooleanCheckbox_sendMeJobs CONTENT=NO
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:*sourceTrackingBlock-recruitmentSourceType CONTENT=%8
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:recruitmentSourceDP CONTENT=%500466
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-saveContinueCmdBottom
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:et-ef ATTR=ID:*cs_experience_CurrentEmployer CONTENT=YES
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-saveContinueCmdBottom
+TAG POS=20 TYPE=SPAN ATTR=TXT:Select
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:selectorSubView-selectorSubView-selectorForm ATTR=ID:selectorSubView-selectorSubView-selectorForm-listFilters*inputTextString CONTENT=microsoft
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:selectorSubView-selectorSubView-selectorForm ATTR=ID:selectorSubView-selectorSubView-selectorForm-listFilters-refreshCommand
+TAG POS=1 TYPE=INPUT:RADIO FORM=ID:selectorSubView-selectorSubView-selectorForm ATTR=ID:selectorSubView-selectorSubView-selectorForm-rows:7._selradio7
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:selectorSubView-selectorSubView-selectorForm ATTR=ID:selectorSubView-selectorSubView-selectorForm-niceCommandButton_down_save_bottom
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-saveContinueCmdBottom
+TAG POS=1 TYPE=INPUT:FILE FORM=ID:editTemplateMultipart-editForm ATTR=ID:editTemplateMultipart-editForm-content-*AttachedFilesBlock-uploadedFile CONTENT=/home/piyush/Documents/AppMaterial/Piyush<SP>Tripathi<SP>Cover<SP>Letter<SP>G.pdf
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:editTemplateMultipart-editForm ATTR=ID:editTemplateMultipart-editForm-content-*AttachedFilesBlock-comment CONTENT=cover<SP>letter<SP>
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:editTemplateMultipart-editForm ATTR=ID:editTemplateMultipart-editForm-content-*AttachedFilesBlock-attachFileCommand
+PAUSE
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:editTemplateMultipart-editForm ATTR=ID:editTemplateMultipart-editForm-content-ftf-saveContinueCmdBottom
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-gp-j_id_jsp_180902981_15pc8-page_0-diversityBlock*0-questionSingleList CONTENT=%com.taleo.systemcomponent.question.entity.RegulationPossibleAnswer__14270037022
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-gp-j_id_jsp_180902981_15pc8-page_0-diversityBlock*1-questionSingleList CONTENT=%com.taleo.systemcomponent.question.entity.RegulationPossibleAnswer__14770037022
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-gp-j_id_jsp_180902981_15pc8-page_0-diversityBlock*2-questionSingleList CONTENT=%com.taleo.systemcomponent.question.entity.RegulationPossibleAnswer__16370037022
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-gp-j_id_jsp_180902981_15pc8-page_0-diversityBlock*3-questionSingleList CONTENT=%com.taleo.systemcomponent.question.entity.RegulationPossibleAnswer__18970037022
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-gp-j_id_jsp_180902981_15pc8-page_0-diversityBlock*2-questionSingleList CONTENT=%com.taleo.systemcomponent.question.entity.RegulationPossibleAnswer__16870037022
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-gp-j_id_jsp_180902981_15pc8-page_0-diversityBlock*1-questionSingleList CONTENT=%com.taleo.systemcomponent.question.entity.RegulationPossibleAnswer__14870037022
+TAG POS=1 TYPE=SELECT FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-gp-j_id_jsp_180902981_15pc8-page_0-diversityBlock*0-questionSingleList CONTENT=%com.taleo.systemcomponent.question.entity.RegulationPossibleAnswer__14470037022
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:et-ef ATTR=ID:*shadow CONTENT=YES
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:et-ef ATTR=ID:100* CONTENT=Piyush<SP>Tripathi
+TAG POS=1 TYPE=A ATTR=TXT:15
+PAUSE
+TAG POS=1 TYPE=INPUT:BUTTON FORM=ID:et-ef ATTR=ID:et-ef-content-ftf-saveContinueCmdBottom
